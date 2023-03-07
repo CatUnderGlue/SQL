@@ -19,17 +19,22 @@ VALUES ('Dmitriy', 'Osintsev', 'Male', 26);
 INSERT INTO employee (first_name, last_name, gender, age)
 VALUES ('Evgeny', 'Pekhtelev', 'Male', 28);
 
-SELECT * FROM employee;
+SELECT *
+FROM employee;
 
 UPDATE employee
 SET first_name = 'Dmitriy',
-    last_name = 'Kuplinov',
-    gender = 'Male',
-    age = '34'
+    last_name  = 'Kuplinov',
+    gender     = 'Male',
+    age        = '34'
 WHERE last_name = 'Pekhtelev';
 
-SELECT * FROM employee;
+SELECT *
+FROM employee;
 
-DELETE FROM employee WHERE last_name = 'Syrov';
+DELETE
+FROM employee
+WHERE last_name = 'Syrov';
 
-SELECT * FROM employee;
+SELECT *
+FROM employee;
