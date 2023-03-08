@@ -43,7 +43,7 @@ ORDER BY last_name DESC;
 
 SELECT *
 FROM employee
-WHERE length(first_name) > 4;
+WHERE LENGTH(first_name) > 4;
 
 UPDATE employee
 SET first_name = 'Maksim'
