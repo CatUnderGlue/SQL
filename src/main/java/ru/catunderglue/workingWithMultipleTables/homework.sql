@@ -5,7 +5,7 @@ CREATE TABLE city
 );
 
 ALTER TABLE employee
-    ADD COLUMN city_id INT;
+    ADD COLUMN city_id BIGINT;
 
 ALTER TABLE employee
     ADD FOREIGN KEY (city_id)
